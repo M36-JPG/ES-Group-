@@ -1,6 +1,6 @@
 # ES-Group-
 Methods in driver as our first time 
-ا                                                                                                                   لوصايا السبع 
+7 Insights you must do in your code 
 1- Must separate between declaration and defination
 2- Each driver must be independent
 3-  Must write signed or unsigned to make it clear , static , and appropriate  
