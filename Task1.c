@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /* Registers (Simulation) */
-unsigned int GPIO_DIR = 0;   // اتجاه البورت (0 = Input, 1 = Output)
-unsigned int GPIO_DATA = 0;  // البيانات
+unsigned int GPIO_DIR = 0;   // Port direction (0 = Input, 1 = Output)
+unsigned int GPIO_DATA = 0;  // Data
 
-/* تعريف الماكروز */
+/* Macro definations  */
 #define SET_BIT(REG, BIT)   (REG |= (1 << BIT))
 #define CLR_BIT(REG, BIT)   (REG &= ~(1 << BIT))
 #define READ_BIT(REG, BIT)  ((REG >> BIT) & 1)
