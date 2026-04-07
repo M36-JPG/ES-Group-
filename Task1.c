@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* تعريف Registers (Simulation) */
+/* Registers (Simulation) */
 unsigned int GPIO_DIR = 0;   // اتجاه البورت (0 = Input, 1 = Output)
 unsigned int GPIO_DATA = 0;  // البيانات
 
@@ -18,7 +18,7 @@ void GPIO_Init(int pin, int direction)
         CLR_BIT(GPIO_DIR, pin);   // Input
 }
 
-/* Function: Write to Pin */
+/* Function Write to Pin */
 void GPIO_Write(int pin, int value)
 {
     if(value == 1)
@@ -33,7 +33,7 @@ int GPIO_Read(int pin)
     return READ_BIT(GPIO_DATA, pin);
 }
 
-/* Main للتجربة */
+
 int main()
 {
     GPIO_Init(2, 1);     // Pin 2 Output
