@@ -1,6 +1,14 @@
 #include <stdio.h>
+/* 1- Must separate between declaration and defination
+2- Each driver must be independent
+3-  Must write signed or unsigned to make it clear , static , and appropriate  
+4- Must use prefix like GPIO 
+5- Don't expose registers only MCAl can edit in it 
+6- Use enum or #define to avoid magic numbers 
+7- Don't use global variables */
 
-/* Registers (Simulation) */
+/* Registers (Simulation)*/
+//3-  Must write signed or unsigned to make it clear , static , and appropriate  
 unsigned int GPIO_DIR = 0;   // Port direction (0 = Input, 1 = Output)
 unsigned int GPIO_DATA = 0;  // Data
 
@@ -10,6 +18,7 @@ unsigned int GPIO_DATA = 0;  // Data
 #define READ_BIT(REG, BIT)  ((REG >> BIT) & 1)
 
 /* Function: Initialize Pin Direction */
+// 4- Must use prefix like GPIO 
 void GPIO_Init(int pin, int direction)
 {
     if(direction == 1)
