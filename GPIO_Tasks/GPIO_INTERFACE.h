@@ -24,6 +24,8 @@
 #define GPIO_PIN6    6
 #define GPIO_PIN7    7
 
+#define GPIO_INPUT_ALL  0x00
+#define GPIO_OUTPUT_ALL 0xFF
 
 void GPIO_VidSetPinDirection(u8 Copy_u8Pin, u8 Copy_u8Port,u8 Copy_u8Direction);
 void GPIO_VidSetPinValue(u8 Copy_u8Pin, u8 Copy_u8Port,u8 Copy_u8Value);
