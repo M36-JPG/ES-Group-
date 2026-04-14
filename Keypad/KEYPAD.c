@@ -18,7 +18,7 @@ u8 KEYPAD_U8GetPressedKey(void)
 
    u8 Loc_U8KEYPADArr [KEYPAD_ROWNUM] [KEYPAD_COLNUM] = KEYPAD_Arr;
 
-   for(int i=0;i<KEYPAD_COLNUM;i++)
+   for(int i=0;i<KEYPAD_COLNUM;j++)
    {
 
      GPIO_VidSetPinValue(KEYPAD_Port,Loc_U8KEYPADCOLArr[i],GPIO_LOW);
