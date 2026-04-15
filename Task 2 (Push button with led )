@@ -1,0 +1,47 @@
+/*
+ * File:   Task.c
+ * Author: Marawan.Muhammed
+ *
+ * Created on April 15, 2026, 11:17 AM
+ */
+
+
+#include <xc.h>
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+
+
+void main(void) {
+    
+     GPIO_VidSetPinDirection(GPIO_PORTD , GPIO_PIN0, GPIO_PORT_INPUT);
+     
+     
+     GPIO_VidSetPinDirection(GPIO_PORTC , GPIO_PIN1, GPIO_PORT_OUTPUT);
+     
+     
+     
+     while(1)
+     {
+           
+     GPIO_VidSetPinValue(GPIO_PORTD , GPIO_PIN0, GPIO_HIGH);
+     
+     GPIO_VidSetPinValue(GPIO_PORTC , GPIO_PIN1, GPIO_LOW);
+     
+     
+     
+                while(GPIO_U8GetPinValue(GPIO_PORTD , GPIO_PIN0) == GPIO_LOW )
+                {
+      
+            
+
+               GPIO_VidSetPinValue(GPIO_PORTD , GPIO_PIN0, GPIO_LOW);
+             GPIO_U8GetPinValue(GPIO_PORTC , GPIO_PIN1) = GPIO_HIGH ; 
+                }
+             
+     }
+   
+     
+     
+    
+    return;
+}
