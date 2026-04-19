@@ -5,7 +5,7 @@
 #define KEYPAD_PortDirection 0xF0
 #define KEYPAD_Port GPIO_PORTD 
 
-#define KEYPAD_Arr{ {1,2,3,'A'},{4,5,6,'B'},{7,8,9,'C'}, {'*',0,'#','D'}};
+#define KEYPAD_Arr{{'7','8','9','/'},{'4','5','6','*'},{'1','2','3','-'},{'C','0','=','+'}}
 
 #define KEYPAD_ROW1 GPIO_PIN0
 #define KEYPAD_ROW2 GPIO_PIN1
