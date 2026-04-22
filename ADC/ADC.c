@@ -69,7 +69,7 @@ void ADC_VidInit(u8 Copy_u8Ref ,u8 Copy_u8Prescaler , u8 Copy_u8Resolution ){
 
     //4_Enable
 
-    SET_BIT (ADCSRA ,)
+    SET_BIT (ADCSRA , ADEN);
 }
 u16 ADC_U16ReadChannel (u8 Copy_u8Channel){
 
